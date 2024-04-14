@@ -20,4 +20,4 @@ def execute_command():
     result = JSQL.execute_sql(command)
     return jsonify(result)
 if __name__ == "__main__":
-    app.run()
+    app.run(host=config["host"], port=config["port"])
