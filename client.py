@@ -1,7 +1,7 @@
 import requests
 
 def execute_command(command, username, password):
-    url = "http://localhost:5000/"
+    url = ""
     auth = (username, password)
     data = {"command": command}
     response = requests.post(url, json=data, auth=auth)
